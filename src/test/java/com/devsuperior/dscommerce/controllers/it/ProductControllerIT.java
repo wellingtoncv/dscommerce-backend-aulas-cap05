@@ -100,7 +100,7 @@ public class ProductControllerIT {
 
 		ResultActions result = mockMvc
 				.perform(post("/products")
-				.header("Authorization,", "Bearer" + adminToken)
+				.header("Authorization", "Bearer " + adminToken)
 				.content(jsonBody)
 				.contentType(MediaType.APPLICATION_JSON)
 				.accept(MediaType.APPLICATION_JSON))
